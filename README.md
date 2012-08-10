@@ -1,6 +1,6 @@
 #What should I call my Bro?
 
-Sometime you have a lot of bros, and you run out of names for them all. this app engine site should help.
+Sometime you have a lot of bros, and you run out of names for them all. This app engine site should help.
 
 It parses an xml dump of wiktionary.org to and generates a bunch of things to call a bro. 
 
