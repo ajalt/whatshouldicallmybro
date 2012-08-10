@@ -1,0 +1,42 @@
+body {
+    margin-top: 150px;
+    color: #000;
+    background-color: #ffffff;
+    text-align:center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase;
+}
+
+a:link {
+    text-decoration:none;
+    font-size:12px;
+}
+a:active {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    text-decoration: none;
+}
+
+#reload a {
+    color:#000;
+}
+
+#credits {
+	font-size: 10px;
+	position: fixed;
+	bottom: 5px;
+	right: 25px;
+        font-weight:normal;
+}
+
+#credits a {
+    color: #888888;
+    text-transform:none;
+}
