@@ -4,7 +4,7 @@ Sometime you have a lot of bros, and you run out of names for them all. This app
 
 It parses an xml dump of wiktionary.org to and generates a bunch of things to call a bro. 
 
-Visit whatshouldicallmybro.appspot.com to use the program.
+Visit [whatshouldicallmybro.appspot.com](http://whatshouldicallmybro.appspot.com) to use the program.
 
 
 ##License
