@@ -18,6 +18,10 @@ import re
 
 __version__ = '1.0.20070709'
 
+char_re = re.compile(r'[a-z]')
+char_dot_re = re.compile(r'[.a-z]')
+digit_re = re.compile(r'\d')
+
 class Hyphenator:
     def __init__(self, patterns, exceptions=''):
         self.tree = {}
@@ -27,13 +31,13 @@ class Hyphenator:
         self.exceptions = {}
         for ex in exceptions.split():
             # Convert the hyphenated pattern into a point array for use later.
-            self.exceptions[ex.replace('-', '')] = [0] + [ int(h == '-') for h in re.split(r"[a-z]", ex) ]
+            self.exceptions[ex.replace('-', '')] = [0] + [ int(h == '-') for h in char_re.split(ex) ]
                 
     def _insert_pattern(self, pattern):
         # Convert the a pattern like 'a1bc3d4' into a string of chars 'abcd'
         # and a list of points [ 1, 0, 3, 4 ].
-        chars = re.sub('[0-9]', '', pattern)
-        points = [ int(d or 0) for d in re.split("[.a-z]", pattern) ]
+        chars = digit_re.sub('', pattern)
+        points = [ int(d or 0) for d in char_dot_re.split(pattern) ]
 
         # Insert the pattern into the tree.  Each character finds a dict
         # another level down in the tree, and leaf nodes have the list of
@@ -53,10 +57,11 @@ class Hyphenator:
         if len(word) <= 4:
             return [word]
         # If the word is an exception, get the stored points.
-        if word.lower() in self.exceptions:
-            points = self.exceptions[word.lower()]
+        lower = word.lower()
+        if lower in self.exceptions:
+            points = self.exceptions[lower]
         else:
-            work = '.' + word.lower() + '.'
+            work = '.' + lower + '.'
             points = [0] * (len(work)+1)
             for i in range(len(work)):
                 t = self.tree
@@ -513,11 +518,3 @@ hyphenate_word = hyphenator.hyphenate_word
 del patterns
 del exceptions
 
-if __name__ == '__main__':
-    import sys
-    if len(sys.argv) > 1:
-        for word in sys.argv[1:]:
-            print '-'.join(hyphenate_word(word))
-    else:
-        import doctest
-        doctest.testmod(verbose=True)
