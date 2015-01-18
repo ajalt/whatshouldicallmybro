@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <title>What should I call my Bro?</title>
+    <style>
+    body {
+        margin-top: 200px;
+        color: #000;
+        background-color: #ffffff;
+        text-align:center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 66px;
+        font-weight: 800;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    a:link {
+        text-decoration:none;
+        font-size:18px;
+    }
+    a:active {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:visited {
+        text-decoration: none;
+    }
+    #reload a {
+        color:#000;
+    }
+    </style>
+</head>
+<body>
+<a href="https://github.com/ajalt/whatshouldicallmybro"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+    <p id="content">Sup, {{name}}</p>
+
+    <div id="reload"><a href="javascript:new_word();">Tell me more, brah</a></div>
+
+    <script>
+    function choose(choices) {
+        return choices[Math.floor(Math.random() * choices.length)];
+    }
+
+    function new_word() {
+        var words = ["BROrtmanteau","quidBROquo","abBROgate","BRObot","BROlish","MexiBRO","pseudBRO","BROlix","BROrocco","BRObile","AngBROla","BROlivia","pseudBROnym","BROnaco","BROngolia","BROmania","BROngo","BROatia","BROldova","PuertBRORico","MiBROnesia","MacedBROnia","BROmato","BROlarsystem","BROpacetic","BROlloquial","indigBRO","hellBRO","primBROse","avocadBRO","BRoverweight","BROmosome","ManitBROba","BROmanian","BROcal","BROrgo","BROretold","lingBRO","BRoutgrow","BRoverdrew","BRoverate","BRovereaten","BRoverhear","BRoverheard","BRoverlaid","BRoverlain","BRoverpay","BRoverpaid","BRoversaw","BRoverseen","BRoversell","BRovershoot","BRovershot","BRoverslept","BRovertake","BRovertook","BRoverthrow","BRoverthrown","BROgent","BROntrol","miBRObe","buffalBRO","BROdem","narBROw","BRObody","tantBRO","defactBRO","BROmaji","BROalesce","BROton","BROology","BROlding","BROdium","BROvey","BROcust","BROwnload","BROmium","BROlonium","BROtactinium","BROduce","arBROw","miBROscopic","BROtagonist","BROmogeneous","scareBROw","BRoligarchy","BROltage","BROsine","BROdecahedron","BROpenhagen","BROrose","rigmaBROle","BROsaic","NaiBRObi","payBROll","BROmbonist","BROquacious","BROmali","banBRO","BROrrow","BROcrastinate","marBROw","BROllage","BROatian","barBROw","BROcoa","BROtato","BRObacco","creBRole","mangBRO","BROcus","BRoasis","BROmunculus","placeBRO","rhinBRO","pyBROtechnic","autoBRObile","hipBRO","BROken","BROcale","akimBRO","BROadstool","anthBROpologic","anthBROpologist","BROpious","BROtel","BROaster","BROmponent","apBRObation","absolutezeBRO","BROpher","necBROphilia","BROdiac","BRoctothorpe","BROtein","annoBROmini","legatBRO","crescendBRO","BROjibake","palinBROme","BROner","imBROglio","BROnation","pareidBROlia","BROjourn","BROtion","BROgnosis","BRodometer","maestBRO","BROologist","BROatee","hyBROphobia","BROmeboy","disBRO","BROtocol","BROrward","BROnely","abogadBRO","habaneBRO","apoptBROsis","BROrmone","BROgurt","BROgomachy","BRoverseas","cereBROny","anBRode","cantBRO","esBROw","BROcal","embargBRO","BROment","BROtive","BROtean","BRO-called","NeBRolithic","bingBRO","BROgenitor","BROsopagnosia","BROmely","TyBROne","BROrnhole","meadBRow","threshBRold","BROmograph","BROma","BROalition","BROtal","albedBRO","tangBRO","BROwer","GitBRO","BROser","asBROciate","bimBRO","BROcus","BROlorado","NorthDakBRota","BROmentum","enBROss","BROrough","falsettBRO","BRoverdraft","BROherent","BROlden","BROyota","exBROnential","glottochBROnology","BROter","abydBROcomist","acBROcephalic","BRoleaginous","amBROsia","BROlka","heliotBROpe","BROmanEmpire","chayBRote","ChicagBRO","BRoneirocritic","BRorthoepy","BROmicide","BROmmotion","BROmbone","BRObotic","BRObotics","BRoverwhelm","disBRObe","BROrogue","hetBROnym","lasBRO","BRodious","clausBROphobe","BROgus","BROtionless","innBROvative","acriBROnious","BROmantic","macaBROni","BROpefully","BROlystone","BRoutpost","beBROth","BRovation","BRowing","BROological","BROdel","BROlin","BROlecism","BROtally","BROnnote","widBRower","dittBRO","BROmpost","circumlBROcution","BROeval","BROtabene","limBRO","BROwling","BROebegone","thorBRough","BROliage","BROtion","MicBROsoft","BROtentate","cuckBRold","enBROssing","BROciopath","symBROsium","gustBRO","BROanword","pandeBROnium","photBROsynthesis","synBROme","BROneofcontention","BROteworthy","machisBRO","LuBROphone","perBROlate","miBROcosm","BROscenium","BROnomania","reBROduce","BROtoriety","BROtation","cellBRO","PlatBRO","exBROsure","antiBROcial","miBROscope","BROcaccia","BROlely","BROstfix","devBROtion","CreBRole","DraBRO","LadinBRO","LatinBRO","BRObile","BROman","BRObusta","BROmentous","BROotomy","PaleBRolithic","autBROlogical","BROconut","Asperger'ssynBROme","BROnyism","BROwman","reBROach","allBROphone","BROmino","BROminoes","theBRologian","BROletariat","BROprioception","BROmeostasis","BROld-blooded","BROquet","grottBRO","BROficient","palominBRO","tetBROmino","BROnafide","BROldabscess","BRoblation","tuxedBRO","BROjan","BROses","whatBROever","BROllate","BROlar","BROmologue","BROcent","alfresBRO","BROceeds","himBRO","BROne-eatingsnotflowerworm","BROchet","BRoverpower","BRovershadow","endBROmorph","ectBROmorph","JerBRoboam","BRoxytone","BRoxytones","BROrrosion","BROcund","abraBRO","psychoBROmatic","meBROmorph","manBROve","BROtozoan","choriBRO","BRotology","harBROw","BROagulate","BROllocation","MiskitBRO","pleBROma","gigolBRO","BRoverstep","BROnochrome","BROcocurante","BROsaic","BROtivate","zygBROdactylous","psittaBROsis","adenBROma","BROgnomen","thBROwback","BROliminous","ShintBRO","BROrecastle","BROneliness","BROpal","rapBROchement","phyllBRO","BRoffload","BRoligarch","BROnytail","BROesis","BROema","BRovershoe","BRObation","xenBRodochium","BROreclose","BROmelo","BRoccipitallobe","BROcalize","BROlarSystem","BRodalisque","BROjoba","BRolfactory","BROetic","BROman'sland","asBRObleme","ukiyBRo-e","BROmmodious","BROquetry","BROcable","BROotropic","creBRosote","BROgistic","BRoverjoyed","YamoussoukBRO","hyBROplane","BRoverwork","paparazBRO","BROgnomens","BROning","BROnomaniac","minestBROne","BROnative","OrlandBRO","BROfaking","BROteus","BROmaticaberration","BROlestation","JimBRO","BROton","BROldrush","ArapaBRO","guyBRot","AcapulcBRO","antiheBRO","antiBROcially","BROcalization","BROlder","BROextensive","BROardingpass","BROlma","BRoverstate","BROlkadot","BROstilion","BRopacity","BROaxial","BROnroe","BROtelier","gasBROintestinal","polyptBROton","BROcals","jumBRO","xenobiBRology","BRopuscule","BROtown","BROsta","BROmeliad","pimientBRO","pimentBRO","BROtomac","BROsey","BRovertone","BROmolog","benBROcaine","metBROpole","BRoverloading","lardBRO","BROllinosis","BROjito","miBROpyle","neuBROepithelium","BROreknow","BROcebo","maraschinBROcherry","retBROactively","BROgaed","BROconsul","BROfuseness","agriBROny","BROnocycle","BROsonic","disBROball","neuBROgeneticist","anthBROpological","BROrmothermic","teneBROse","BROzole","BRoverfall","BROviet","anastBROmose","anastBROmosing","BROgation","BRovoviviparous","deBROtivate","BROgodaedaly","hypotBROchoid","inteBROceanic","logBROlogical","meadBRowsweet","hyBROthermal","AlepBRO","BROachability","BROfa-bed","AphBRodisiac","BROwable","marienBROsche","iaBROgenesis","BROemata","BROsiopesis","BROsiopeses","BROsiopetic","BROmography","BROppet","PaleBRo-Eskimo","BRowndom","BROmesweethome","AntBROnius","cabildBRO","BROrachio","BROtotill","BROvity","BROrphosis","BROsepetal","BROwmanship","BRoverwait","ababsurdBRO","abarthBROses","abilBRO","AbongBRO","BROrajmos","BROtol","abBROnia","BROmato","BROphoplast","asBROphile"];
+        var word = choose(words);
+        var div = document.getElementById("content");
+        div.innerHTML = 'Sup, ' + word;
+    }
+    new_word();
+    </script>
+</body>
+</html>
